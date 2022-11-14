@@ -1,5 +1,7 @@
 /* Start variables */
-
+:root {
+  --mc: #10CAB7;
+}
 /* End variables */
 /* Start global rules */
 * {
@@ -98,6 +100,7 @@ body {
   min-width: 200px;
   background-color: #F6F6F6;
   display: none;
+  z-index: 1;
 }
 
 .header .links ul::before {
@@ -131,4 +134,34 @@ body {
 
 .header .links ul li:not(:last-child) a {
   border-bottom: 1px solid #ddd;
+}
+/* End header */
+/* Start landing */
+.landing {
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+}
+
+.intro-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--mc);
+}
+
+.intro-text p {
+  font-size: 19px;
+  line-height: 1.8;
 }
