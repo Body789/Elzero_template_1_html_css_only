@@ -1,6 +1,7 @@
 /* Start variables */
 :root {
   --mc: #10CAB7;
+  --secondary-color: #2c4755;
 }
 /* End variables */
 /* Start global rules */
@@ -267,5 +268,31 @@ body {
   color: #444;
   font-weight: 300;
   line-height: 1.6;
+}
+
+.services .image {
+  text-align: center;
+  position: relative;
+}
+
+.services .image img {
+  width: 260px;
+}
+
+.services .image::before {
+  content: "";
+  background-color: var(--secondary-color);
+  width: 100px;
+  height: calc(100% + 100px);
+  top: -50px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width:1199px) {
+  .image-column {
+    display: none;
+  }
 }
 /* End services */
