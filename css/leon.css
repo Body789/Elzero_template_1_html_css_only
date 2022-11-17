@@ -226,3 +226,46 @@ body {
   font-size: 17px;
 }
 /* End features */
+/* Start services */
+.services {
+  padding: 60px 0;
+}
+
+.services .srv-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 100px;
+}
+
+.services .srv-con .srv {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .services .srv-con .srv {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.services .srv-con .srv i {
+  color: var(--mc);
+  flex-basis: 60px;
+}
+
+.services .srv-con .srv .text {
+  flex: 1;
+}
+
+.services .srv-con .srv .text h3 {
+  margin: 0 0 20px;
+}
+
+.services .srv-con .srv .text p {
+  color: #444;
+  font-weight: 300;
+  line-height: 1.6;
+}
+/* End services */
