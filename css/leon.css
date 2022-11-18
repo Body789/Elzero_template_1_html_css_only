@@ -386,4 +386,25 @@ body {
 .about .about-content .image img {
   max-width: 100%;
 }
+
+.about .about-content .text {
+  flex-basis: calc(100% - 500px);
+}
+
+.about .about-content .text p:first-of-type {
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.about .about-content .text hr {
+  border-color: var(--mc);
+  display: inline-block;
+  width: 50%;
+}
+
+.about .about-content .text p:last-of-type {
+  line-height: 2;
+  color: #777;
+}
 /* End about */
