@@ -2,6 +2,8 @@
 :root {
   --mc: #10CAB7;
   --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
 }
 /* End variables */
 /* Start global rules */
