@@ -407,4 +407,20 @@ body {
   line-height: 2;
   color: #777;
 }
+
+@media (max-width: 991px) {
+  .about .about-content .image::before,
+  .about .about-content .image::after {
+    display: none;
+  }
+
+  .about .about-content .image {
+    margin: 0 auto 60px;
+  }
+
+  .about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /* End about */
